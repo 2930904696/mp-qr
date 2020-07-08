@@ -1,0 +1,53 @@
+.a{
+  position: relative;
+  left:100px;
+}
+.b{
+    position: absolute;
+    left: 50%;
+    width: 100px;
+    transform: translateX(-50%);
+    text-align: center;
+    border: 3px solid red;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display:none;
+}
+.a:hover{
+   color: blue;
+}
+
+.c{
+    display: block;
+    padding: 10px;
+    text-decoration:none;
+}
+.c:hover{
+    color: red;
+}
+.a:hover .b{
+    display: block;
+}
+
+.weixin {
+    background: url(./weixin.png) no-repeat -45px;
+    padding: 50px;
+    position: relative;
+    margin: 200px;
+    display: block;
+    width: 100px;
+}
+.Official-Accounts{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -40px;
+    transition: 1s;
+    opacity: 0;
+}
+
+.weixin:hover .Official-Accounts{
+    top:-60px;
+    opacity: 1;
+    
+}
